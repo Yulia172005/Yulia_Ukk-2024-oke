@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Cal Ukk</title>
+</head>
+<body>
+    <marquee bgcolor="white">Program UKK Yulia Wulandari</marquee>
+    <body>
+        <html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(192, 192, 192);
+        }
+        .calc {
+            border: 7px solid black;
+            border-radius: 70px;
+            width: 320px;
+            margin:auto;
+            background-color: rgb(152,152,203);
+            border: 7px solid black;
+            border-left-color: rgb(0, 0, 0);
+            border-bottom-color: rgb(0, 0, 0);
+            box-shadow: 12px 4px 15px 3px;
+        }
+
+        .calc form {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            margin: 70px 60px 8px 40px;
+
+        }
+
+        .head {
+            display: flex;
+            margin: 10px 5px 10px 0px;
+            justify-content: flex-end;
+
+        }
+
+        .head label {
+            color: black;
+            font-family: sans-serif;
+            font-weight: 120;
+            margin-right: 120px;
+        }
+
+        .head .mirror {
+            display: flex;
+            background-color: rgb(50, 70, 70);
+            width: 100%;
+            height: 20px;
+            border-radius: 5px;
+            border: 6px solid black;
+            border-right-color: rgb(142, 141, 141);
+            border-top-color: rgb(96, 95, 95);
+            border-left-color: rgb(1 1 1 0.1);
+
+        }
+
+        .input input {
+            margin-bottom: 50px;
+            height: 80px;
+            width: 98%;
+            background-color: rgb(81, 99, 99);
+            text-align: end;
+            font-size: 50px;
+            border-radius: 8px;
+            border-right-color: cmyk(10, 190, 190);
+        }
+
+        .row input {
+            border-radius: 10px;
+            border: none;
+            font-size: 30px;
+            color: black;
+            background-color: rgb(100, 100, 100);
+            margin: 6px;
+            height: 40px;
+            width: 40px;
+            border: 3px solid rgb(15, 15, 15);
+            border-left-color: rgb(170, 165, 165);
+            border-bottom-color: rgb(125, 119, 119);
+            box-shadow: 0px 0px 3px 1px rgb(33, 32, 32);
+            cursor: pointer;
+            
+            /* border-right: 3px solid black ;
+            border-top: 3px solid black ;
+             */
+        }
+
+        .row .key
+        {
+            background-color: rgb(175, 33, 33);
+        }
+        .row .key:hover{
+            background-color: rgb(224, 62, 62);
+
+        }
+
+        .row .eql{
+            background-color: rgb(20, 113, 10);
+        }
+        .row .eql:hover{
+            background-color: rgb(17, 131, 17);
+        }
+        .row input:hover{
+            background-color: rgb(100, 100, 100);
+        }
+        /* .end{
+            background-color: rgb(52, 51, 51);
+            width: 110%;
+            height: 30px;
+            margin-top: 5px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            margin-bottom: 0px;
+
+        } */
+
+    </style>                                
+
+</head>
+
+<body>
+    <div class="calc">
+        <form action="" method="post">
+            <div class="input">
+                <div class="head">
+
+
+                    <label for="inp">Calculator Yulia </label>
+                    <div class="mirror">
+
+                    </div>
+                </div>
+                <input type="text" id="inp" name="display">
+            </div>
+            <div class="row">
+                <input type="button" class="key" value="C" name="clear" onclick="display.value = '' ">
+                <input type="button" class="key" value="&leftarrow;" name="del" onclick="display.value = display.value.toString().slice(0,-1)">
+                <input type="button" value="%" name="%" onclick="display.value +='%'"> 
+                <input type="button" value="/" name="/" onclick="display.value +='/'">
+
+            </div>
+            <div class="row">
+                <input type="button" value="7" name="7" onclick="display.value+='7'">
+                <input type="button" value="8" name="8" onclick="display.value+='8'">
+                <input type="button" value="9" name="9" onclick="display.value+='9'">
+                <input type="button" value="x" name="*" onclick="display.value+='*'">
+
+            </div>
+            <div class="row">
+                <input type="button" value="4" name="4" onclick="display.value+='4'">
+                <input type="button" value="5" name="5" onclick="display.value+='5'">
+                <input type="button" value="6" name="6" onclick="display.value+='6'">
+                <input type="button" value="&minus;" name="-" onclick="display.value+='-'">
+
+            </div>
+            <div class="row">
+                <input type="button" value="1" name="1" onclick="display.value +='1'">
+                <input type="button" value="2" name="2" onclick="display.value +='2'">
+                <input type="button" value="3" name="3" onclick="display.value +='3'">
+                <input type="button" value="+" name="+" onclick="display.value +='+'">
+
+            </div>
+            <div class="row">
+                <input type="button" value="0" name="0" onclick="display.value +='0'">
+                <input type="button" value="00" name="00" onclick="display.value +='00'">
+                <input type="button" value="." name="." onclick="display.value +='.'">
+                <input type="button" class="eql" value="=" name="=" onclick="display.value = eval(display.value)">
+
+            </div>
+            
+                <div class="end">
+                    
+                </div>
+            
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>

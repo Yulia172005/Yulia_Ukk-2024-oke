@@ -1,0 +1,109 @@
+{
+            background-color: cmyk(150, 160, 160);
+        }
+        .calc {
+            border: 7px solid black;
+            border-radius: 70px;
+            width: 320px;
+            margin:auto;
+            background-color: rgb(80, 80, 80);
+            border: 7px solid black;
+            border-left-color: rgb(160, 160, 160);
+            border-bottom-color: rgb(140, 140, 140);
+            box-shadow: 12px 4px 15px 3px;
+        }
+
+        .calc form {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            margin: 70px 60px 8px 40px;
+
+        }
+
+        .head {
+            display: flex;
+            margin: 10px 5px 10px 0px;
+            justify-content: flex-end;
+
+        }
+
+        .head label {
+            color: white;
+            font-family: sans-serif;
+            font-weight: 120;
+            margin-right: 120px;
+        }
+
+        .head .mirror {
+            display: flex;
+            background-color: rgb(150, 70, 70);
+            width: 100%;
+            height: 20px;
+            border-radius: 5px;
+            border: 6px solid black;
+            border-right-color: rgb(142, 141, 141);
+            border-top-color: rgb(96, 95, 95);
+            border-left-color: rgb(1 1 1 0.1);
+
+        }
+
+        .input input {
+            margin-bottom: 50px;
+            height: 80px;
+            width: 98%;
+            background-color: rgb(81, 99, 99);
+            text-align: end;
+            font-size: 50px;
+            border-radius: 8px;
+            border-right-color: rgb(190, 190, 190);
+        }
+
+        .row input {
+            border-radius: 10px;
+            border: none;
+            font-size: 30px;
+            color: white;
+            background-color: rgb(100, 100, 100);
+            margin: 6px;
+            height: 40px;
+            width: 40px;
+            border: 3px solid rgb(15, 15, 15);
+            border-left-color: rgb(170, 165, 165);
+            border-bottom-color: rgb(125, 119, 119);
+            box-shadow: 0px 0px 3px 1px rgb(33, 32, 32);
+            cursor: pointer;
+            
+            /* border-right: 3px solid black ;
+            border-top: 3px solid black ;
+             */
+        }
+
+        .row .key
+        {
+            background-color: rgb(175, 33, 33);
+        }
+        .row .key:hover{
+            background-color: rgb(224, 62, 62);
+
+        }
+
+        .row .eql{
+            background-color: rgb(20, 113, 10);
+        }
+        .row .eql:hover{
+            background-color: rgb(17, 131, 17);
+        }
+        .row input:hover{
+            background-color: rgb(100, 100, 100);
+        }
+        /* .end{
+            background-color: rgb(52, 51, 51);
+            width: 110%;
+            height: 30px;
+            margin-top: 5px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            margin-bottom: 0px;
+
+        } */
